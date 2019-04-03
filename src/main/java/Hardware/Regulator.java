@@ -3,6 +3,7 @@ package Hardware;
 public class Regulator {
 
     public void regulate(Thermometer t, Heater h, double minTemp, double maxTemp, RoomTemperature temperature) {
+
         RegulatorDisplayCodes code;
         while (t.read(temperature) < maxTemp) {
             code = RegulatorDisplayCodes.HEATING;

@@ -1,5 +1,11 @@
 package Main;
 
+import Hardware.AirConditioner;
+import Hardware.Regulator;
+import Hardware.RemoteCommandSensor;
+import Interfaces.Heater;
+import Interfaces.Thermometer;
+
 public class App {
 
     public static void main( String[] args ) {
@@ -8,7 +14,7 @@ public class App {
         final double maxTemp = 21.0;
 
         RoomTemperature temperature = new RoomTemperature(15);
-        Heater heater = new GasHeater();
+        Heater heater = new AirConditioner();
         Thermometer thermometer = new RemoteCommandSensor();
 
         Regulator regulator = new Regulator();
