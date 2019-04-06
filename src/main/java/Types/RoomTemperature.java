@@ -5,14 +5,15 @@ public class RoomTemperature {
     // Atributos
 
     private int temperature = 0;
+    private static RoomTemperature checkObject = null;
 
     // Constructores
 
-    public RoomTemperature() {
+    private RoomTemperature() {
 
     }
 
-    public RoomTemperature(int temperature) {
+    private RoomTemperature(int temperature) {
         this.temperature = temperature;
     }
 
@@ -23,6 +24,14 @@ public class RoomTemperature {
     }
 
     // Metodos
+
+    public static RoomTemperature getRoomTemperature(int temperature) {
+
+        if (checkObject == null) {
+            checkObject = new RoomTemperature(temperature);
+        }
+        return checkObject;
+    }
 
     public void incrementTemperature(int temperature) {
         this.temperature += temperature;

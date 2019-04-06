@@ -15,7 +15,7 @@ public class App {
         final double minTemp = 15.0;
         final double maxTemp = 21.0;
 
-        RoomTemperature temperature = new RoomTemperature(15);
+        RoomTemperature temperature = RoomTemperature.getRoomTemperature(15);
         Heater heater = new AirConditioner();
         Thermometer thermometer = new RemoteCommandSensor();
 
