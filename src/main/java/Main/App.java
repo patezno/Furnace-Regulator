@@ -5,6 +5,7 @@ import Hardware.Regulator;
 import Hardware.RemoteCommandSensor;
 import Interfaces.Heater;
 import Interfaces.Thermometer;
+import Other.Demon;
 import Types.RoomTemperature;
 
 public class App {
@@ -23,9 +24,9 @@ public class App {
         System.out.println("Arrancando...");
         regulator.regulate(thermometer, heater, minTemp, maxTemp, temperature);
 
-        Jedi yoda = new Jedi();
+        Demon dante = new Demon();
         System.out.println("\nArrancando a Yoda: ");
-        regulator.regulate(thermometer, yoda, minTemp, maxTemp, temperature);
-        yoda.speak();
+        regulator.regulate(thermometer, dante, minTemp, maxTemp, temperature);
+        dante.speak();
     }
 }

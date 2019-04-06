@@ -1,11 +1,5 @@
 package Types;
 
-public class RegulatorDisplayCodes {
-
-    // Constructor
-
-    public RegulatorDisplayCodes() {
-
-    }
-
+public enum RegulatorDisplayCodes {
+    ON, OFF, HEATING, WAITING;
 }

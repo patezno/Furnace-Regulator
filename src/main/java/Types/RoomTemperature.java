@@ -15,4 +15,10 @@ public class RoomTemperature {
     public RoomTemperature(int temperature) {
         this.temperature = temperature;
     }
+
+    // Getter
+
+    public int getTemperature() {
+        return temperature;
+    }
 }
