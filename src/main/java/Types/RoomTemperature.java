@@ -16,6 +16,12 @@ public class RoomTemperature {
         this.temperature = temperature;
     }
 
+    // Setter
+
+    public void setTemperature(int temperature) {
+        this.temperature = temperature;
+    }
+
     // Getter
 
     public int getTemperature() {

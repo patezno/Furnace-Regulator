@@ -15,11 +15,13 @@ public class AirConditioner implements Heater {
 
     @Override
     public void engage(RoomTemperature temperature) {
-
+        int newTemperature = temperature.getTemperature() + 1;
+        temperature.setTemperature(newTemperature);
     }
 
     @Override
     public void disengage(RoomTemperature temperature) {
-
+        int newTemperature = temperature.getTemperature() - 1;
+        temperature.setTemperature(newTemperature);
     }
 }

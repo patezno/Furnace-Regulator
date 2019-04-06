@@ -15,6 +15,6 @@ public class RemoteCommandSensor implements Thermometer {
 
     @Override
     public int read(RoomTemperature temperature) {
-        return 0;
+        return temperature.getTemperature();
     }
 }

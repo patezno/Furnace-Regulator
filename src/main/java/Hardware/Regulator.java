@@ -29,7 +29,7 @@ public class Regulator {
                 System.out.println("Calentando => temperatura " + temperature.getTemperature());
                 break;
             case WAITING:
-                System.out.println("Apagado => temperatura " + temperature.getTemperature());
+                System.out.println("Apagando => temperatura " + temperature.getTemperature());
                 break;
             default:
                 System.out.println("Algo raro sucede...");
