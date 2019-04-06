@@ -1,6 +1,8 @@
 package Interfaces;
 
+import Types.RoomTemperature;
+
 public interface Thermometer {
 
-    void read(RoomTemperature temperature);
+    int read(RoomTemperature temperature);
 }

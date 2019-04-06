@@ -5,10 +5,11 @@ import Hardware.Regulator;
 import Hardware.RemoteCommandSensor;
 import Interfaces.Heater;
 import Interfaces.Thermometer;
+import Types.RoomTemperature;
 
 public class App {
 
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
 
         final double minTemp = 15.0;
         final double maxTemp = 21.0;
@@ -19,11 +20,11 @@ public class App {
 
         Regulator regulator = new Regulator();
 
-        System.out.println( "Arrancando..." );
+        System.out.println("Arrancando...");
         regulator.regulate(thermometer, heater, minTemp, maxTemp, temperature);
 
         Jedi yoda = new Jedi();
-        System.out.println( "\nArrancando a Yoda: " );
+        System.out.println("\nArrancando a Yoda: ");
         regulator.regulate(thermometer, yoda, minTemp, maxTemp, temperature);
         yoda.speak();
     }

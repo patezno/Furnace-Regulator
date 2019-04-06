@@ -1,5 +1,10 @@
 package Hardware;
 
+import Interfaces.Heater;
+import Interfaces.Thermometer;
+import Types.RegulatorDisplayCodes;
+import Types.RoomTemperature;
+
 public class Regulator {
 
     public void regulate(Thermometer t, Heater h, double minTemp, double maxTemp, RoomTemperature temperature) {
