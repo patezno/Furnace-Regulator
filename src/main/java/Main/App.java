@@ -25,7 +25,7 @@ public class App {
         regulator.regulate(thermometer, heater, minTemp, maxTemp, temperature);
 
         Demon dante = new Demon();
-        System.out.println("\nArrancando a Yoda: ");
+        System.out.println("\nArrancando a Dante: ");
         regulator.regulate(thermometer, dante, minTemp, maxTemp, temperature);
         dante.speak();
     }
