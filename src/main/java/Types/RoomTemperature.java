@@ -16,15 +16,15 @@ public class RoomTemperature {
         this.temperature = temperature;
     }
 
-    // Setter
-
-    public void setTemperature(int temperature) {
-        this.temperature = temperature;
-    }
-
     // Getter
 
     public int getTemperature() {
         return temperature;
+    }
+
+    // Metodos
+
+    public void incrementTemperature(int temperature) {
+        this.temperature += temperature;
     }
 }

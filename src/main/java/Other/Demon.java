@@ -15,14 +15,12 @@ public class Demon implements Heater {
 
     @Override
     public void engage(RoomTemperature temperature) {
-        int newTemperature = temperature.getTemperature() + 1;
-        temperature.setTemperature(newTemperature);
+        temperature.incrementTemperature(1);
     }
 
     @Override
     public void disengage(RoomTemperature temperature) {
-        int newTemperature = temperature.getTemperature() - 1;
-        temperature.setTemperature(newTemperature);
+        temperature.incrementTemperature(-1);
     }
 
     public void speak() {
